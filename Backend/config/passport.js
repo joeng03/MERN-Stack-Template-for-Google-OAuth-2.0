@@ -9,8 +9,7 @@ passport.deserializeUser(function (user, done) {
 passport.use(
   new GoogleStrategy(
     {
-      clientID:
-        CLIENT_ID,
+      clientID: CLIENT_ID,
       clientSecret: CLIENT_SECRET,
       callbackURL: "http://localhost:4000/auth/google/callback",
     },
